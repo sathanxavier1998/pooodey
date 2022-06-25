@@ -349,7 +349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
             buttons = [
             [
-                InlineKeyboardButton('🌀 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌀', url='https://t.me/cpflicks')
+                InlineKeyboardButton('🌀 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌀', url='https://t.me/Cinemaathattakam_Links')
             ]
             ]
         if f_caption is None:
@@ -384,7 +384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('𝗔𝗬𝗬𝗢𝗗𝗔 𝗠𝗢𝗡𝗘 , 𝗔𝗧𝗛 𝗜𝗣𝗣𝗢 𝗜𝗟𝗟𝗔.')
+            return await query.answer('𝗔𝗬𝗬𝗢𝗗𝗔 𝗠𝗢𝗡𝗘 , 𝗔𝗧𝗛 𝗜𝗣𝗣O WORK ALLA.')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -711,7 +711,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>Hai 👋 {message.from_user.mention}</b> 😍\n\n<b>📁 Found ✨  Files For Your Query : {search} 👇</b>"
     if imdb and imdb.get('poster'):
         try:
-            fmsg = await message.reply_photo('https://telegra.ph/file/8413e6e80ce7ad1754d27.jpg', caption=cap[:1024],
+            fmsg = await message.reply_photo('https://telegra.ph/file/9e9ea06672c131436b67a.jpg', caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
